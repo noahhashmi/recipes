@@ -72,6 +72,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zps-dY-F5C">
+                        <barButtonItem key="backBarButtonItem" title="Cancel" id="dKh-Av-wst"/>
                         <barButtonItem key="rightBarButtonItem" title="+ NEW" id="vzQ-Z1-WNL">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -87,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="1057" y="337"/>
         </scene>
-        <!--Create RecipeVC-->
+        <!--Add New Recipe-->
         <scene sceneID="2fo-aW-dM7">
             <objects>
                 <viewController id="g5Y-da-ueZ" customClass="CreateRecipeVC" customModule="recipes" customModuleProvider="target" sceneMemberID="viewController">
@@ -163,7 +164,11 @@
                             <constraint firstItem="mY2-aS-fNA" firstAttribute="centerX" secondItem="BBa-k9-gVT" secondAttribute="centerX" id="zbc-zh-1VZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Add New Recipe" id="QxG-hI-vAe">
+                        <barButtonItem key="backBarButtonItem" title="Cancel" id="X2p-VX-9PR"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="addImage" destination="mY2-aS-fNA" id="Ssi-y3-Um7"/>
                         <outlet property="recipeImg" destination="BBa-k9-gVT" id="3wA-QQ-uFD"/>
                         <outlet property="recipeIngredients" destination="TMT-RQ-Twt" id="kex-yb-uwd"/>
                         <outlet property="recipeSteps" destination="fNH-am-OHY" id="DmZ-tg-Ll4"/>

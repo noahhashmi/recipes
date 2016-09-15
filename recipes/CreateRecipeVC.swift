@@ -16,6 +16,7 @@ class CreateRecipeVC: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var recipeSteps: UITextField!
     @IBOutlet weak var recipeImg: UIImageView!
     @IBOutlet weak var addRecipeBtn: UIButton!
+    @IBOutlet weak var addImage: UIButton!
     
     var imagePicker: UIImagePickerController!
     
@@ -26,6 +27,7 @@ class CreateRecipeVC: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.delegate = self
         recipeImg.layer.cornerRadius = 4.0
         recipeImg.clipsToBounds = true
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Cancel", style: .Plain, target: nil, action: nil)
 
     }
     
@@ -36,6 +38,7 @@ class CreateRecipeVC: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     @IBAction func addImage(sender: AnyObject!) {
         presentViewController(imagePicker, animated: true, completion: nil)
+        addImage.setTitle("", forState: .Normal)
     }
     
     @IBAction func createRecipe(sender: AnyObject!) {
