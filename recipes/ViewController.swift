@@ -19,6 +19,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         tableview.delegate = self
         tableview.dataSource = self
+        
+        //navigationItem.titleView = UIImageView(image: UIImage(named: "logo.png"))
+        
+        let imgView = UIImageView(frame: CGRectMake(0, 0, 30, 30))
+        imgView.image = UIImage(named: "logo.png")
+        // setContent mode aspect fit
+        imgView.contentMode = .ScaleAspectFit
+        self.navigationItem.titleView = imgView
+
     }
     
     override func viewDidAppear(animated: Bool) {

@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--My Favorite Recipes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="recipes" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,8 +71,11 @@
                             <constraint firstItem="2SD-wB-xYf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="rJs-8J-cF5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="zps-dY-F5C">
+                    <navigationItem key="navigationItem" title="My Favorite Recipes" id="zps-dY-F5C">
                         <barButtonItem key="backBarButtonItem" title="Cancel" id="dKh-Av-wst"/>
+                        <barButtonItem key="leftBarButtonItem" title="+ NEW +" id="k5d-kZ-daL">
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="+ NEW" id="vzQ-Z1-WNL">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
